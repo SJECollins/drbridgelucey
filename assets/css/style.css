@@ -10,6 +10,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  touch-action: manipulation;
 }
 
 ul {
@@ -59,6 +60,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-size: 2rem;
   text-align: center;
   margin: 1rem 0;
   color: var(--primary);
@@ -126,6 +128,10 @@ nav {
   display: none;
 }
 
+.here {
+  border-bottom: 1px solid var(--text);
+}
+
 /* Main Styling */
 
 main {
@@ -172,7 +178,6 @@ section {
 
 #home-text h1,
 #page-not-found-text h1 {
-  font-size: 2rem;
   text-align: left;
 }
 
@@ -213,16 +218,16 @@ section {
   position: relative;
 }
 
-#about-text::before {
-  /* background: url("../images/ginkgolrg.png") center center/contain no-repeat; */
-  opacity: 0.2;
+/* #about-text::before {
+  background: url("../images/ginkgolrg.png") center center/contain no-repeat;
+  opacity: 0.1;
   content: "";
   position: absolute;
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
-}
+} */
 
 #about-text h1 {
   font-size: 2rem;
@@ -234,16 +239,16 @@ section {
   position: relative;
 }
 
-#faq-section::before {
-  /* background: url("../images/ginkgosml.png") center center repeat; */
-  opacity: 0.3;
+/* #faq-section::before {
+  background: url("../images/ginkgosml.png") center center/contain no-repeat;
+  opacity: 0.2;
   content: "";
   position: absolute;
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
-}
+} */
 
 .accordion-wrapper {
   width: 100%;
@@ -294,7 +299,8 @@ section {
 }
 
 .accordion:after {
-  content: "\2BC5";
+  font-family: "Zapf Dingbats";
+  content: "\25B2";
   color: var(--primary);
   position: absolute;
   top: 30%;
@@ -303,7 +309,7 @@ section {
 }
 
 .accordion.active:after {
-  content: "\2BC6";
+  content: "\25BC";
 }
 
 /* Contact Styling */
@@ -355,6 +361,7 @@ textarea {
   border: 2px solid var(--primary);
   border-radius: 10px;
   margin-bottom: 1rem;
+  font-size: 1rem;
 }
 
 input:focus,
@@ -369,6 +376,10 @@ input:active {
   text-align: center;
 }
 
+#form-submit {
+  font-size: 1rem;
+}
+
 #form-failed {
   color: var(--secondary);
   font-weight: bold;
@@ -378,6 +389,7 @@ input:active {
   border: 2px solid var(--secondary);
   display: none;
 }
+
 #form-failed p {
   margin: 0;
 }
@@ -427,6 +439,9 @@ footer p {
 }
 
 @media (max-width: 768px) {
+  body {
+    font-size: 1.2rem;
+  }
   .navbar {
     position: fixed;
     top: 0;
@@ -456,6 +471,7 @@ footer p {
     line-height: 35px;
     align-items: flex-start;
     padding-left: 2rem;
+    padding-bottom: 1rem;
   }
   #nav-menu {
     display: none;
