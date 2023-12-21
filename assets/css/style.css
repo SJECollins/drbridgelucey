@@ -218,7 +218,7 @@ section {
   position: relative;
 }
 
-/* #about-text::before {
+#about-text::before {
   background: url("../images/ginkgolrg.png") center center/contain no-repeat;
   opacity: 0.1;
   content: "";
@@ -227,7 +227,7 @@ section {
   right: 0px;
   bottom: 0px;
   left: 0px;
-} */
+}
 
 #about-text h1 {
   font-size: 2rem;
@@ -239,7 +239,7 @@ section {
   position: relative;
 }
 
-/* #faq-section::before {
+#faq-section::before {
   background: url("../images/ginkgosml.png") center center/contain no-repeat;
   opacity: 0.2;
   content: "";
@@ -248,7 +248,7 @@ section {
   right: 0px;
   bottom: 0px;
   left: 0px;
-} */
+}
 
 .accordion-wrapper {
   width: 100%;
