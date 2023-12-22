@@ -241,7 +241,7 @@ section {
 
 #faq-section::before {
   background: url("../images/ginkgosml.png") center center/contain no-repeat;
-  opacity: 0.2;
+  opacity: 0.1;
   content: "";
   position: absolute;
   top: 0px;
